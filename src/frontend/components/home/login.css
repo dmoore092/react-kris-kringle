@@ -1,0 +1,116 @@
+.login-wrapper{
+    background-color: white;
+    width: 90%;
+    height: 45%;
+    margin-left: 5%;
+    margin-top: 25px;
+    border-radius: 25px;
+    display: inline-flex;
+    box-shadow: 1px 1.5px #888;
+    /* border: 2px solid black; */
+}
+
+.login-form{
+    width: 90%;
+    margin-left: 7%;
+    padding: 15px;
+    /* border: 2px solid black; */
+}
+.prompt{
+    margin: auto;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.login-text{
+    height: 35px;
+    width: 235px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border:1px solid #ccc;
+    padding-left: 15px;
+}
+#login-btn{
+    margin-left: 17px;
+}
+#failed-login{
+    background-color: green;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+    padding: 5px 10px;
+    border: 3px dotted red;
+    display: none;
+}
+@media only screen and (min-width: 600px) {
+    .home-nav{
+        left: 46%;
+        top: 10px;
+
+    }
+    .login-wrapper{
+        background-color: white;
+        width: 50%;
+        height: 40%;
+        margin: auto;
+        border-radius: 25px;
+        display: flex;
+        box-shadow: 1px 1.5px #888888;
+        border: 2px solid black;
+    }
+    .prompt{
+        /* border: 2px solid black; */
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .login-wrap{
+        width: 80%;
+        margin: auto;
+    }
+    #login-btn{
+        width: 100%;
+        margin: auto;
+    }
+    #prompt-wrap{
+        /* border: 2px solid black; */
+        width: 100%;
+        display: flex;
+    }
+    .login-text{
+        width: 100%;
+        padding-left: 15px;
+    }
+}
+/* <!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mysql.css">
+    <title>Kris Kringle 2019!</title>
+  </head>
+  <body>
+      <img src="../frontend/img/santa.png" id = "santa1">
+      <a href="http://www.polishcampout.com:3000/Main/"><p class="home-nav" id="back" >Back</p></a>
+      <a href="http://www.polishcampout.com:3000/"><span class="home-nav" id="home" >Home</span></a>
+      <img src="../frontend/img/frosty.png"/ id = "frosty">
+      <h1 id="kk2019">Kris Kringle 2019</h1>
+        <div class="login-wrapper">
+            <div id="results">
+                <!-- <?php   //if(!$pref1){
+                            //echo "<p>Aww, {$name} hasn't added {$pronoun1} preferences yet, go bug {$pronoun2} to add them here!</p>";
+                        //}
+                        //else{
+                            // echo "<h2>Gift Ideas</h2>";
+                            // echo "<hr />";
+                            // echo "<h3>$name wants...</h3>";
+                            // echo "<p>$pref1</p>";
+                            // echo "<p>$pref2</p>";
+                            // echo "<p>$pref3</p>";
+                      //  } 
+                ?>
+            </div>
+        </div><!-- end of login-wrapper -->
+      <!-- </div>
+  </body>
+</html> --> */
