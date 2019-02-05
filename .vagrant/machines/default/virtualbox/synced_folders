@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/html":{"guestpath":"/var/www/html","hostpath":"/Users/dmo/Projects/react-kris-kringle/src/backend","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/dmo/Projects/react-kris-kringle","disabled":false,"__vagrantfile":true}}}
