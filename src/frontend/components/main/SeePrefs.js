@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 
 export class SeePrefs extends Component {
   
@@ -19,13 +18,13 @@ export class SeePrefs extends Component {
   }
 
   submit (event) {
-    axios.get('http://localhost:8888/mysql.php?name='+this.state.Name)
+    fetch.get('http://localhost:8888/mysql.php?name='+this.state.Name)
       .then(res => {
         const preferences = res.data;
         this.setState({ preferences });
       })
       event.preventDefault();
-      //console.log(this.state.preferences.name);
+      console.log(this.state.preferences.name);
   }
 
   render() {
@@ -35,7 +34,6 @@ export class SeePrefs extends Component {
       <div>
         <div className="home-form">
             <form id="form2"
-                    action = 'http://localhost:8888/mysql.php'
                     onSubmit={this.submit} >
                 <p className="spacer"><span className="preferences">I want to see..</span></p>
                 <select value={this.state.value} onChange={this.handleChange} name="name">
