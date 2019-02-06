@@ -5,7 +5,12 @@ export class SeePrefs extends Component {
   constructor(props){
     super(props);
     this.state = {
-      preferences: []
+      preferences: [{
+        name:'',
+        pref1: '',
+        pref2: '',
+        pref3: ''
+      }]
     };
     this.handleChange = this.handleChange.bind(this);
     //this.handleSubmit = this.handleSubmit.bind(this);
@@ -18,18 +23,17 @@ export class SeePrefs extends Component {
   }
 
   submit (event) {
-    fetch.get('http://localhost:8888/mysql.php?name='+this.state.Name)
+    fetch('http://192.168.33.10/mysql.php')
       .then(res => {
         const preferences = res.data;
         this.setState({ preferences });
       })
       event.preventDefault();
-      console.log(this.state.preferences.name);
   }
 
   render() {
     const prefs = this.state.preferences;
-    console.log(prefs[1]);
+    console.log("placeholder");
     return (
       <div>
         <div className="home-form">
